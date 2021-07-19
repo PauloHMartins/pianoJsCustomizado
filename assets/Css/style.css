@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcd397;
+}
+.console--piano {
+  display: flex;
+  min-height: 60vh;
+  margin: 20vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+h1 {
+  color: #30220e;
+  margin-bottom: 20px;
+}
+.keys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.key {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #30220e;
+  color: #ffa724;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50px;
+  background-color: #fff;
+  margin: 0.5rem;
+}
+.key.active {
+  border: 2px solid #fcd397;
+  color: #fcd397;
+}
+
+.composer {
+  width: 260px;
+  margin-top: 20px;
+}
+.composer #input {
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding: 10px 15px;
+}
+.composer button {
+  width: 100%;
+  height: 40px;
+  background: none;
+  border: 2px solid #30220e;
+  color: #30220e;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.composer button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  margin-top: 20px;
+  color: #30220e;
+  font-size: 13px;
+  text-align: center;
+}
