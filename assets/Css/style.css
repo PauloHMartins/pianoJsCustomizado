@@ -16,13 +16,13 @@ h1 {
 }
 /****************PIANO****************************/
 ul {
-  height: 18.875em;
-  width: 34em;
-  margin: 5em auto;
-  padding: 3em 0 0 3em;
+  height: 14rem;
+  width: 24rem;
+  margin: 3.5rem auto;
+  padding: 2.1rem 0 0 2.1rem;
   position: relative;
   border: 1px solid #160801;
-  border-radius: 1em;
+  border-radius: 0.7rem;
   background: linear-gradient(
       to bottom right,
       rgba(0, 0, 0, 0.3),
@@ -42,8 +42,8 @@ li {
 }
 
 ul .white {
-  height: 16em;
-  width: 4em;
+  height: 11.2rem;
+  width: 2.8rem;
   z-index: 1;
   border-left: 1px solid #bbb;
   border-bottom: 1px solid #bbb;
@@ -62,8 +62,8 @@ ul .white {
   background: linear-gradient(to bottom, #fff 0%, #e9e9e9 100%);
 }
 .black {
-  height: 8em;
-  width: 2em;
+  height: 4rem;
+  width: 1.4rem;
   margin: 0 0 0 -1em;
   z-index: 2;
   border: 1px solid #000;
@@ -80,7 +80,7 @@ ul .white {
 }
 
 .key {
-  margin: 0 0 0 -1em;
+  margin: 0 0 0 -0.7rem;
 }
 
 ul li:first-child {
@@ -125,4 +125,35 @@ footer {
   font-size: 16px;
   margin: auto;
   text-align: center;
+}
+
+@media (min-width: 500px) {
+  ul {
+    height: 18.875rem;
+    width: 34rem;
+    margin: 5rem auto;
+    padding: 3rem 0 0 3rem;
+    border-radius: 1rem;
+  }
+
+  ul .white {
+    height: 16rem;
+    width: 4rem;
+  }
+
+  .black {
+    height: 8rem;
+    width: 2rem;
+    margin: 0 0 0 -1rem;
+  }
+
+  .black .active {
+    box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.2) inset,
+      0 -2px 2px 3px rgba(0, 0, 0, 0.6) inset, 0 1px 2px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to right, #444 0%, #222 100%);
+  }
+
+  .key {
+    margin: 0 0 0 -1rem;
+  }
 }
