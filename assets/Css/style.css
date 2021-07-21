@@ -13,6 +13,7 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
   margin-top: 20px;
+  font-size: 1.5rem;
 }
 /****************PIANO****************************/
 ul {
@@ -155,5 +156,8 @@ footer {
 
   .key {
     margin: 0 0 0 -1rem;
+  }
+  h1 {
+    font-size: 2rem;
   }
 }
