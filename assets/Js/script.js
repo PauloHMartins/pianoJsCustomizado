@@ -25,7 +25,7 @@ function playSound(sound) {
   let audioElement = document.querySelector( `#s_${sound}` ); /*atribuo a variavel 
   audioElement o item atribuido no HTML .como é dinamico insiro as iniciais 
   que repetem no id 's_' e passo via template string o nome da variavel. */
-  let keyElement = document.querySelector( `div[data-key="${sound}"]` );
+  let keyElement = document.querySelector( `.white[data-key="${sound}"]` );
 
   // agora verifico se a tecla apertada é uma das que há som atribuido
   if(audioElement) { 
